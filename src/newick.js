@@ -83,7 +83,7 @@
           break;
         default:
           var x = tokens[i-1];
-          if (x == ')' || x == '(' || x == ',') {
+          if (i==0 || x == ')' || x == '(' || x == ',') {
             tree.name = token;
           } else if (x == ':') {
             tree.length = parseFloat(token);
